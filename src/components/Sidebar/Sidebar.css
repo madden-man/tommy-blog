@@ -1,0 +1,24 @@
+.sidebar-holder {
+    position: relative;
+    height: 100vh;
+    float: left;
+    overflow: hidden;
+    transition: 0.4s all;
+    -webkit-transition: 0.4s all;
+}
+
+.left-sidebar {
+    height: 100%;
+}
+
+.expanded {
+    width: 280px;
+}
+
+.not-expanded {
+    width: 70px;
+}
+
+.dark {
+    background-color: #000000;
+}
