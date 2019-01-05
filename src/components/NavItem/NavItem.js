@@ -28,9 +28,18 @@ class NavItem extends Component {
 
     render() {
 
+        const activeStyle = {
+            backgroundColor: this.props.color,
+            color: "white",
+        };
+
+        const borderStyle = {
+            border: "2px ridge " + this.props.color,
+        };
+
         return (
-            <Link to={this.props.path} className={this.state.isActive ? "nav-item active-item" : "nav-item"} onMouseEnter={this.onEnter} onMouseLeave={this.onLeave}>
-                <img src={require(`../../img/${this.props.img}`)} className={this.props.border ? "nav-logo bordered" : "nav-logo"} alt={this.props.text} />
+            <Link to={this.props.path} style={this.state.isActive ? activeStyle : {}} className="nav-item" onMouseEnter={this.onEnter} onMouseLeave={this.onLeave}>
+                <img src={require(`../../img/${this.props.img}`)} style={this.props.border ? borderStyle : {}} className="nav-logo" alt={this.props.text} />
                 <span>{this.props.text}</span>
             </Link>
         )

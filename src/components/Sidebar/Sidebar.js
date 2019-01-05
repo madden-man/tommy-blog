@@ -30,11 +30,13 @@ class Sidebar extends Component {
         return (
             <main className={this.state.isExpanded ? "sidebar-holder expanded" : "sidebar-holder not-expanded"}>
                 <div className="left-sidebar dark" onMouseEnter={this.onEnter} onMouseLeave={this.onLeave}>
-                    <NavItem text="Home" img="tommy_real.jpg" path="/" border={true} />
-                    <NavItem text="Air" img="air-symbol.jpg" path="/air"/>
-                    <NavItem text="Water" img="water-symbol.jpg" path="/water"/>
-                    <NavItem text="Earth" img="earth-symbol.jpg" path="/earth"/>
-                    <NavItem text="Fire" img="fire-symbol.jpg" path="/fire"/>
+                    <NavItem text="Home" img="tommy_real.jpg" path="/" color="darkgreen" border={true} />
+                    <NavItem text="Theology" img="air-symbol.jpg" color="#286977" path="/air"/>
+                    <NavItem text="Poetry" img="fire-symbol.jpg" color="#671414" path="/fire"/>
+                    <NavItem text="Stories" img="water-symbol.jpg" color="#24435c" path="/water"/>
+                    <NavItem text="Projects" img="earth-symbol.jpg" color="#00380a" path="/earth"/>
+                    <NavItem text="Memories" img="stories.png" path="/stories" color="darkgreen" border={true} />
+                    <NavItem text="Options" img="stories.png" path="/options" color="darkgreen" border={true} />
                 </div>
             </main>
         )

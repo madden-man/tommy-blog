@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar';
 import Content from './components/Content';
 
 import './App.css';
+import './bootstrap/css/bootstrap.css';
 
 class App extends Component {
   render() {
