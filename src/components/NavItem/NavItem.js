@@ -1,49 +1,32 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import './NavItem.css';
 
-class NavItem extends Component {
+const NavItem = ({ path, img, border, text, color }) => {
+  const [isActive, setIsActive] = useState(false);
 
-    constructor(props) {
-        super(props);
+  const activeStyle = {
+    backgroundColor: color,
+    color: 'white',
+  };
 
-        this.state = {
-            isActive: false,
-        };
+  const borderStyle = {
+    border: '2px ridge ' + color,
+  };
 
-    }
-
-    onEnter = () => {
-        this.setState({
-            isActive: true,
-        });
-    }
-
-    onLeave = () => {
-        this.setState({
-            isActive: false,
-        });
-    }
-
-    render() {
-
-        const activeStyle = {
-            backgroundColor: this.props.color,
-            color: "white",
-        };
-
-        const borderStyle = {
-            border: "2px ridge " + this.props.color,
-        };
-
-        return (
-            <Link to={this.props.path} style={this.state.isActive ? activeStyle : {}} className="nav-item" onMouseEnter={this.onEnter} onMouseLeave={this.onLeave}>
-                <img src={require(`../../img/${this.props.img}`)} style={this.props.border ? borderStyle : {}} className="nav-logo" alt={this.props.text} />
-                <span>{this.props.text}</span>
-            </Link>
-        )
-    }
-}
+  return (
+    <Link
+      to={path}
+      style={isActive ? activeStyle : {}}
+      className="nav-item"
+      onMouseEnter={() => setIsActive(true)}
+      onMouseLeave={() => setIsActive(false)}
+    >
+      <img src={require(`../../img/${img}`)} style={border ? borderStyle : {}} className="nav-logo" alt={text} />
+      <span>{text}</span>
+    </Link>
+  );
+};
 
 export default NavItem;

@@ -3,16 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
+    "@material/fab": "^1.1.1",
+    "classnames": "^2.2.6",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.5",
-    "webfontloader": "^1.6.28"
+    "redux": "^4.0.1",
+    "webfontloader": "^1.6.28",
+    "postcss": "^7.0.18",
+    "postcss-color-function": "^4.1.0",
+    "postcss-color-mod-function": "^3.0.3"
   },
   "scripts": {
+    "build:css": "postcss src/styles/index.css -o src/index.css",
+    "watch:css": "postcss src/styles/index.css -o src/index.css -w",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

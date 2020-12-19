@@ -1,0 +1,25 @@
+.theology-map__backdrop {
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+
+.theology-main-point {
+  border-radius: 50%;
+  font-size: 24px;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 16px;
+  background-color: #00B1E1;
+  display: flex;
+  align-items: center;
+}
+
+.add-point-btn {
+  position: absolute;
+  right: 30px;
+}
+
+.hidden {
+  visibility: hidden;
+}

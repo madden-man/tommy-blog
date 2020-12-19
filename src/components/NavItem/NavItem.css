@@ -2,17 +2,27 @@
     color: #ffffff;
     font-size: 35px;
     white-space: nowrap;
-    display: table;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 70px;
-    width: 100%;
+    overflow: hidden;
 }
 
 .nav-item span {
-    display: table-cell;
-    vertical-align: middle;
+    display: block;
     margin: 0;
+    overflow: hidden;
     padding: 0;
+    max-width: 0;
+    width: 0;
+    transition: max-width 1s ease-in-out;
+}
+
+.nav-item:hover span {
+    max-width: 1000px;
     width: 100%;
+    padding: 0 12px 0 0;
 }
 
 .active-item {
@@ -23,7 +33,7 @@
 .nav-logo {
     width: 60px;
     height: 60px;
-    margin: 5px 10px 5px 10px;
+    margin: 4px 8px 4px 8px;
 }
 
 .bordered {

@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  justify-content: center;
+  padding-top: 4.375rem;
+  min-height: 100vh;
+  background: #060805 url('../../assets/canyon.jpg') no-repeat center center fixed;
+}
+
+.main--fire {
+  background: #060805 url('../../assets/beach-bonfire.jpg') no-repeat center center fixed;
+}
+
+.main .page {
+  width: 100%;
+  max-width: 64rem;
+  padding: 6px;
+  font-family: 'Ubuntu', sans-serif;
+}
