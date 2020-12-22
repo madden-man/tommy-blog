@@ -4,7 +4,7 @@ import classnames from 'classnames';
 
 import ScrollToTop from './ScrollToTop';
 
-import Home from '../../pages/Home';
+import Home from '../../pages/Home/Home';
 import Memories from '../../pages/Memories/Memories';
 import TheologyMap from '../../pages/TheologyMap/TheologyMap';
 import PoetryPage from '../../pages/Poetry/Poetry';

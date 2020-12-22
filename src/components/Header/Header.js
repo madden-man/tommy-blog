@@ -19,7 +19,7 @@ const Header = () => {
             <NavItem text="Poetry" img="fire-symbol.jpg" color="#671414" path="/fire"/>
             <NavItem text="Projects" img="earth-symbol.jpg" color="#00380a" path="/earth"/>
             <NavItem text="Memories" img="stories.png" path="/stories" color="darkgreen" border={true} />
-            <NavItem text="Options" img="stories.png" path="/options" color="darkgreen" border={true} />
+            <NavItem text="Options" img="settings-24px.svg" path="/options" color="darkgreen" border={true} />
           </div>
         </div>
     </div>

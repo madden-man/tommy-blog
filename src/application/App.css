@@ -41,3 +41,8 @@ a {
   font-family: 'Ubuntu';
   src: url('../assets/Ubuntu/Ubuntu-Medium.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Gravity';
+  src: url('../assets/gravity-webfont/Gravity-Light.woff') format('woff');
+}
