@@ -19,7 +19,7 @@
     transition: max-width 1s ease-in-out;
 }
 
-.nav-item:hover span {
+.nav-item--active span {
     max-width: 1000px;
     width: 100%;
     padding: 0 12px 0 0;
@@ -37,8 +37,13 @@
     background-color: #ffffff;
 }
 
+.nav-logo__menu {
+    align-self: flex-end;
+}
+
 .bordered {
     width: 58px;
     height: 58px;
     border: 2px ridge darkgreen;
+    border-radius: 50%;
 }

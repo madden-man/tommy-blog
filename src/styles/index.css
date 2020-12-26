@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Bevan|Cairo|Press+Start+2P|Roboto+Slab|Ubuntu&display=swap');
+@import 'assets/gravity-webfont/style.css';
 
 :root {
 
   /* Colors */
-  --blue-05: color-mod(var(--blue-50) tint(90%));
+  --blue-0: white;
+  --blue-5: color-mod(var(--blue-50) tint(90%));
   --blue-10: color-mod(var(--blue-50) tint(80%));
   --blue-15: color-mod(var(--blue-50) tint(70%));
   --blue-20: color-mod(var(--blue-50) tint(60%));

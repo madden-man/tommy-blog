@@ -14,5 +14,5 @@
   width: 100%;
   max-width: 64rem;
   padding: 6px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: var(--ubuntu);
 }
