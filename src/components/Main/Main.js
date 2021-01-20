@@ -8,6 +8,7 @@ import Home from '../../pages/Home/Home';
 import Memories from '../../pages/Memories/Memories';
 import TheologyMap from '../../pages/TheologyMap/TheologyMap';
 import PoetryPage from '../../pages/Poetry/Poetry';
+import BiblePage from '../../pages/Bible/BiblePage';
 
 import './Main.css';
 
@@ -25,6 +26,7 @@ const Main = () =>
       <Route exact path='/fire' component={PoetryPage} />
       <Route path='/fire/:id' component={PoetryPage} />
       <Route exact path='/stories' component={Memories} />
+      <Route exact path='/bible' component={BiblePage} />
     </Switch>
   </main>;
 

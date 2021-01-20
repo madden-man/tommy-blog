@@ -1,6 +1,6 @@
 import React from 'react';
 
-import headshot from '../../assets/headshot.jpeg';
+import headshot from '../../assets/photos_of_me/headshot.jpeg';
 
 import './home.css';
 
