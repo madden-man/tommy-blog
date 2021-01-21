@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
 import WebFont from 'webfontloader';
+import { ConnectedRouter as Router } from 'connected-react-router';
 
 import App from './application/App';
-import rootReducer from './application/rootReducer';
+import configureStore, { history } from './redux/store';
 import registerServiceWorker from './application/registerServiceWorker';
 
 import './index.css';
@@ -16,10 +16,13 @@ WebFont.load({
 	}
 });
 
-const store = createStore(rootReducer);
+const store = configureStore();
 
-ReactDOM.render(<Provider store={store}>
-	<App />
+ReactDOM.render(
+<Provider store={store}>
+	<Router history={history}>
+		<App />
+	</Router>
 </Provider>, document.getElementById('root'));
 
 registerServiceWorker();

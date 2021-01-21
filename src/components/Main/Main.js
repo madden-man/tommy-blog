@@ -4,11 +4,11 @@ import classnames from 'classnames';
 
 import ScrollToTop from './ScrollToTop';
 
-import Home from '../../pages/Home/Home';
-import Memories from '../../pages/Memories/Memories';
-import TheologyMap from '../../pages/TheologyMap/TheologyMap';
-import PoetryPage from '../../pages/Poetry/Poetry';
-import BiblePage from '../../pages/Bible/BiblePage';
+import Home from '../../views/Home/Home';
+import Memories from '../../views/Memories/Memories';
+import TheologyMap from '../../views/TheologyMap/TheologyMap';
+import PoetryPage from '../../views/Poetry/Poetry';
+import BiblePage from '../../views/Bible/BiblePage';
 
 import './Main.css';
 
