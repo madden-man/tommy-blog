@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 export const BibleContent = ({ currentText }) =>
-  <div className="bible-content" className="bible-content">
+  <div className="bible-content">
     {currentText}
   </div>;
 

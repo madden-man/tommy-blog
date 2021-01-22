@@ -19,7 +19,7 @@ export const BiblePage = ({ currentSignature, passageRequested }) => {
     } else if (e.keyCode === 27) {
       setModalOpen(false);
     } else if (e.keyCode === 39) {
-      const currChapter = parseInt(currentSignature.substring(currentSignature.indexOf(' ') + 1));
+      const currChapter = parseInt(currentSignature.substring(currentSignature.indexOf(' ') + 1), 10);
       const currBook = currentSignature.substring(0, currentSignature.indexOf(' '));
 
       const currBookInfo = BOOKS.map((book, index) => book.name === currBook && ({ ...book, index }))[0];
@@ -33,7 +33,7 @@ export const BiblePage = ({ currentSignature, passageRequested }) => {
       passageRequested(newPassage);
     } else if (e.keyCode === 37) {
       /* left arrow */
-      const currChapter = parseInt(currentSignature.substring(currentSignature.indexOf(' ') + 1));
+      const currChapter = parseInt(currentSignature.substring(currentSignature.indexOf(' ') + 1), 10);
       const currBook = currentSignature.substring(0, currentSignature.indexOf(' '));
 
       const currBookInfo = BOOKS.map((book, index) => book.name === currBook && ({ ...book, index }))[0];
