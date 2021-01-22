@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 export const BibleContent = ({ currentText }) =>
-  <div className="bible-content" style={{whiteSpace: 'pre-wrap'}}>
+  <div className="bible-content" className="bible-content">
     {currentText}..lol
   </div>;
 

@@ -28,7 +28,7 @@ export const BiblePage = () => {
     <div className="bible-container">
       <BibleSidebar />
       <BibleContent />
-      <BibleModal isOpen={isModalOpen} />
+      <BibleModal isOpen={isModalOpen} closeModal={() => setModalOpen(false)} />
     </div>
   );
 };

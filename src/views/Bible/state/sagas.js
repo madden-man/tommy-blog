@@ -8,7 +8,6 @@ export function* requestPassage(newSignature) {
   try {
     const response = yield BibleApi.fetch(newSignature);
 
-    debugger;
     yield put(passageReceived(response.data.passages[0]));
   } catch (e) {
     console.log(e);
