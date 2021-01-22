@@ -3,11 +3,11 @@ import { connect } from 'react-redux';
 
 export const BibleContent = ({ currentText }) =>
   <div className="bible-content" className="bible-content">
-    {currentText}..lol
+    {currentText}
   </div>;
 
 const mapStateToProps = state => ({
-  currentText: state.bibleReducer.currentText || '',
+  currentText: state.bible.currentText || '',
 });
 
 export default connect(mapStateToProps)(BibleContent);

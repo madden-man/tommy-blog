@@ -332,4 +332,11 @@ export const NEW_TESTAMENT_BOOKS = [
     code: 'rev',
     numChapters: 22,
   }
-]
+];
+
+export const BOOKS = [
+  ...OLD_TESTAMENT_BOOKS,
+  ...NEW_TESTAMENT_BOOKS,
+];
+
+export default BOOKS;

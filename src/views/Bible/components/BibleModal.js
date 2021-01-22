@@ -1,6 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { connect } from 'react-redux';
-import { passageRequested as passageRequestedDispatcher } from '../state/actions';
 
 export const BibleModal = ({ isOpen, closeModal, passageRequested }) => {
   if (!isOpen) return null;
@@ -70,8 +68,4 @@ BibleModal.defaultProps = {
   isOpen: false,
 };
 
-const mapDispatchToProps = dispatch => ({
-  passageRequested: (sig) => dispatch(passageRequestedDispatcher(sig)),
-});
-
-export default connect(null, mapDispatchToProps)(BibleModal);
+export default BibleModal;
